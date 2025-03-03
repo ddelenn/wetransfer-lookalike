@@ -1,31 +1,31 @@
 #### PROJET de Maxime BLOISE - Ryan CARLET - Zyad Zain EL ABIDINE - Delenn DECAMBRON ####
 
 
-# Gestionnaire de Fichiers avec Authentification
+# GESTIONNAIRE DE FICHIERS AVEC AUTHENTIFICATION
 
 Ce projet est une application PHP qui combine un système d'authentification avec un gestionnaire de fichiers permettant le partage entre utilisateurs.
 
-## Fonctionnalités
+## FONCTIONNALITÉS
 
-### Authentification
+### AUTHENTIFICATION
 - Inscription avec email et mot de passe
 - Connexion sécurisée
 - Modification du profil (email, mot de passe)
 - Déconnexion
 
-### Gestion de fichiers
+### GESTION DE FICHIERS
 - Upload de fichiers (limité à 200Mo)
 - Enregistrement des fichiers dans un dossier "uploads", qui est crée automatiquement si ce dernier n'existe pas
 - Téléchargement de fichiers
 - Suppression de fichiers
 - Affichage des statistiques (taille, date, nombre de téléchargements)
 
-### Gestion des droits d'accès
+### GESTION DES DROITS D'ACCÈS
 - Partage de fichiers avec d'autres utilisateurs
 - Visualisation des fichiers partagés
 - Révocation des accès
 
-## Structure des fichiers
+## STRUCTURE DES FICHIERS
 
 - `functions.php` : Contient toutes les fonctions du système
 - `connexion.php` : Page de connexion
@@ -38,14 +38,14 @@ Ce projet est une application PHP qui combine un système d'authentification ave
 - `update_email.php` : Modification de l'email
 - `update_password.php` : Modification du mot de passe
 
-## Installation (pense-bête)
+## INSTALLATION (pense-bête)
 
 1. Placez tous les fichiers dans un dossier accessible par votre serveur web
 2. Assurez-vous que PHP est configuré correctement sur votre serveur
 3. Vérifiez que les permissions d'écriture sont correctes pour les dossiers `data` et `uploads` (ils seront créés automatiquement)
 4. Accédez à `inscription.php` pour créer votre premier compte
 
-## Structure des données
+## STRUCTURE DES DONNÉES
 
 Les données sont stockées dans trois fichiers JSON :
 
@@ -86,7 +86,7 @@ Stocke les permissions d'accès entre utilisateurs :
 }
 ```
 
-## Sécurité
+## SÉCURITÉ
 
 - Les mots de passe sont hashés avec password_hash() (bcrypt)
 - Les fichiers PHP ne peuvent pas être uploadés
@@ -94,7 +94,7 @@ Stocke les permissions d'accès entre utilisateurs :
 - Nettoyage des entrées utilisateur
 - Vérification de l'authentification sur chaque page
 
-## Points d'amélioration futurs (un autre pense-bête)
+## POINTS D'AMÉLIORATION FUTURS (autre pense-bête)
 
 - Ajouter un système de catégories pour les fichiers
 - Ajouter une prévisualisation des fichiers
